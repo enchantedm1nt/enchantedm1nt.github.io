@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Speurtocht Homepagina</title>
+
+<script src="js/loc.js"></script>
+<style>
+  button {
+    display: block;
+    margin: 1em 0;
+    padding: 1em;
+    font-size: 1.2em;
+  }
+  button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  }
+  #status {
+    margin-top: 1em;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+<h1>Speurtocht - Verhoren</h1>
+
+<button id="btnTon" disabled>Verhoor Ton van Wezel</button>
+<button id="btnNoa" disabled>Verhoor Noa van der Meer</button>
+<button id="btnWillemJan" disabled>Verhoor Willem-Jan ten Broeke</button>
+<button id="btnSaid" disabled>Verhoor Said Azmani</button>
+<button id="btnEmma" disabled>Verhoor Emma Heijnen</button>
+
+<p id="status">Locatie wordt bepaald...</p>
+</body>
+</html>
