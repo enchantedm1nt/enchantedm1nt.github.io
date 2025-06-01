@@ -1,0 +1,15 @@
+.btn {
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  color: white;
+  font-size: 20px;
+  background: dodgerblue;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: cornflowerblue;
+  text-decoration: none;
+}
