@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Speurtocht Homepagina</title>
+
+<script src="../js/loc.js"></script>
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <nav>
+    <!-- Checkbox for toggling menu -->
+    <input type="checkbox" id="check">
+    <!-- Menu icon -->
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <!-- Site logo -->
+    <label class="logo">Politiespeurtocht</label>
+    <!-- Navigation links -->
+    <ul class="nav">
+      <li class="nav"><a class="nav" href="../index.html">Start</a></li>
+      <li class="nav"><a class="active nav" href="#">Verhoren</a></li>
+      <li class="nav"><a class="nav" href="../spelregels.html">Spelregels</a></li>
+      <li class="nav"><a class="nav" href="#">Contact</a></li>
+      <li class="nav"><a class="nav" href="#">Feedback</a></li>
+    </ul>
+  </nav>
+
+  <div class="dark">
+    <h1>VERHOREN.</h1>
+    <p>In dit gedeelte kun je een verhoor starten. Dat kan alleen als je op de juiste locatie bent, en vanaf een uur na de start.</p>
+
+    <button id="btnTon" disabled>Verhoor Ton van Wezel</button>
+    <button id="btnNoa" disabled>Verhoor Noa van der Meer</button>
+    <button id="btnWillemJan" disabled>Verhoor Willem-Jan ten Broeke</button>
+    <button id="btnSaid" disabled>Verhoor Said Azmani</button>
+    <button id="btnEmma" disabled>Verhoor Emma Heijnen</button>
+
+    <p id="status">ℹ️ Locatie wordt bepaald...</p>
+  </div>
+  <div class="light">
+    <h1>HELP!</h1>
+    <p>Als er iets niet werkt kan dat meerdere oorzaken hebben. Let er op dat:</p>
+    <ul>
+      <li>Je GPS-toestemming hebt verleend.</li>
+      <li>Het later is dan één uur na de starttijd.</li>
+      <li>Je binnen 50 meter van de locatie staat, met GPS aan.</li>
+    </ul>
+    <p>Werkt het nog steeds niet? Stuur dan een berichtje naar Jesper met de eventuele error, dan krijg je de link van het desbetreffende verhoor via WhatsApp.</p>
+  </div>
+  <footer>
+    <p>Deze website is gemaakt door Jesper Welagen en gehost met ❤️ door GitHub.</p>
+  </footer>
+</body>
+</html>

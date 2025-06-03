@@ -26,16 +26,16 @@ label.logo {
   padding: 0 100px;
   font-weight: bold;
 }
-nav ul {
+nav ul.nav {
   float: right;
   margin-right: 20px;
 }
-nav ul li {
+nav ul li.nav {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
-nav ul li a {
+nav ul li a.nav {
   color: white;
   font-size: 17px;
   padding: 7px 13px;
@@ -63,7 +63,7 @@ a:hover {
   label.logo {
     padding-left: 10px;
   }
-  nav ul li a {
+  nav ul li a.nav {
     font-size: 16px;
   }
 }
@@ -75,7 +75,7 @@ a:hover {
   label.logo {
     font-size: 22px;
   }
-  ul {
+  ul.nav {
     position: fixed;
     background: #053F5E;
     top: 80px;
@@ -88,12 +88,12 @@ a:hover {
     margin-bottom: 3px;
     border-radius: 10px;
   }
-  nav ul li {
+  nav ul li.nav {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-  nav ul li a {
+  nav ul li a.nav {
     font-size: 20px;
   }
   a:hover,
@@ -101,6 +101,7 @@ a:hover {
     background: none;
     color: #FFD700;
     font-weight: bold;
+    text-decoration: underline;
   }
   #check:checked~ul {
     left: 0;
