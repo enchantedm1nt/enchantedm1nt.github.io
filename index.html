@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Speurtocht Homepagina</title>
 
 <script src="js/loc.js"></script>
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
-  <h1>Speurtocht - Verhoren</h1>
+  <nav>
+    <!-- Checkbox for toggling menu -->
+    <input type="checkbox" id="check">
+    <!-- Menu icon -->
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <!-- Site logo -->
+    <label class="logo">Politiespeurtocht</label>
+    <!-- Navigation links -->
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Feedback</a></li>
+    </ul>
+  </nav>
 
-  <button id="btnTon" disabled>Verhoor Ton van Wezel</button>
-  <button id="btnNoa" disabled>Verhoor Noa van der Meer</button>
-  <button id="btnWillemJan" disabled>Verhoor Willem-Jan ten Broeke</button>
-  <button id="btnSaid" disabled>Verhoor Said Azmani</button>
-  <button id="btnEmma" disabled>Verhoor Emma Heijnen</button>
+  <div class="welkom">
+    <h1>Welkom!</h1>
+    <p>Via deze website kun je nog eens de regels doorlezen en verdachten verhoren. Daarnaast kun je met deze website enkele bewijsstukken openen met de juiste code. <i>Let op: geef de website toegang tot je GPS, anders werkt een en ander niet!</i></p>
+  </div>
 
-  <p id="status">Locatie wordt bepaald...</p>
-</body>
-</html>
+  <div class="verhoren">
+  	<h1>Ik wil iemand verhoren.</h1>
+  	<p>Je kunt iemand verhoren als je op de juiste locatie bent. Er zijn in totaal vijf verhoren.</p>
+  	<a class="btnleft">Naar de verhoren</a>
+  </div>
+
+  <div class="spelregels">
+    <h1>Wat waren de regels?</h1>
+    <p>De spelregels kun je terugvinden in het boekje dat in het dossier zat. Diezelfde regels kun je ook hier terugvinden.</p>
+    <a class="btnleft">Naar de spelregels</a>
+  </div>
+
+  <footer>
+    <p>Deze website is gemaakt door Jesper Welagen en gehost met ❤️ door GitHub.</p>
+  </footer>

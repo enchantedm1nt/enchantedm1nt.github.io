@@ -1,7 +1,7 @@
   // Coördinaten van verdachten-locaties (voorbeeld: Arnhem)
   const locaties = {
     ton: { lat: 51.984, lon: 5.913 },        // Pas aan naar echte locatie
-    noa: { lat: 51.985, lon: 5.914 },
+    noa: { lat: 51.9805, lon: 5.9186 },
     willemJan: { lat: 51.986, lon: 5.915 },
     said: { lat: 51.987, lon: 5.916 },
     emma: { lat: 51.988, lon: 5.917 },
@@ -55,7 +55,7 @@
 
     const statusEl = document.getElementById('status');
     if (actieveKnoppen === 0) {
-      statusEl.textContent = 'Je bent niet dichtbij een verdachte locatie.';
+      statusEl.textContent = 'Je bent niet bij een verdachte in de buurt.';
     } else {
       statusEl.textContent = `Je kunt ${actieveKnoppen} verdachte(n) verhoren.`;
     }
