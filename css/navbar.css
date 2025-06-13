@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  list-style: none;
   box-sizing: border-box;
 }
 body {
@@ -26,24 +25,25 @@ label.logo {
   padding: 0 100px;
   font-weight: bold;
 }
-nav ul.nav {
+nav > ul {
   float: right;
   margin-right: 20px;
+  list-style: none;
 }
-nav ul li.nav {
+nav > ul > li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
-nav ul li a.nav {
+nav > ul > li > a {
   color: white;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
 }
-a.active,
-a:hover {
+nav > a.active,
+nav > a:hover {
   background: #1b9bff;
   transition: .5s;
 }
@@ -63,7 +63,7 @@ a:hover {
   label.logo {
     padding-left: 10px;
   }
-  nav ul li a.nav {
+  nav > ul > li > a {
     font-size: 16px;
   }
 }
@@ -75,7 +75,7 @@ a:hover {
   label.logo {
     font-size: 22px;
   }
-  ul.nav {
+  nav > ul {
     position: fixed;
     background: #053F5E;
     top: 80px;
@@ -88,16 +88,16 @@ a:hover {
     margin-bottom: 3px;
     border-radius: 10px;
   }
-  nav ul li.nav {
+  nav > ul > li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-  nav ul li a.nav {
+  nav > ul > li > a {
     font-size: 20px;
   }
-  a:hover,
-  a.active {
+  nav > a:hover,
+  nav > a.active {
     background: none;
     color: #FFD700;
     font-weight: bold;

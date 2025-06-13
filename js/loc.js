@@ -18,7 +18,7 @@ const links = {
 
 // Voorwaarden voor activatie
 const maxAfstand = 50; // meters
-const startDatum = new Date('2025-06-13T21:00'); // PAS AAN indien nodig
+const startDatum = new Date('2025-06-13T20:00'); // PAS AAN indien nodig
 
 // Hulpfuncties en technisch gekut
 function afstandInMeters(lat1, lon1, lat2, lon2) {
